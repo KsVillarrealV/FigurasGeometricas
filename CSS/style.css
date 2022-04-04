@@ -1,0 +1,160 @@
+body{
+    text-align: center;
+    background: url(../imagenes/fondo.jpg);
+}
+
+h1{
+    color:#000000;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    padding: 15px 40px;
+    margin:5px;
+    background: #109da7;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background: transparent;  
+}
+input{
+    background: #a6bcbe;
+    border-radius: 10px;
+}
+select{
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-right: 1%; 
+    background: #a3bbbd;
+}
+
+
+
+
+/* si tiene un id se imboca a traves de un numeral, cuando es una clase es a traves de un punto */
+#contBotones{
+width: 450px;
+height: 400px;
+background: #59d6ec;
+border-radius: 10px;
+border: 1px solid #000000;
+}
+#contFigura{
+    width: 450px;
+    height: 400px;
+    background:#1674e0;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+#figura{
+    width: 150px;
+    height: 150px;
+    background:#dae0df;
+   margin:0 auto;
+   /* para centrarlo */
+   margin-top: 60px;
+   transition: 0.5s;
+}
+#figura.circulo{
+    border-radius: 50%;
+    transform:rotate( -360deg);
+    background: #e78f09;
+}
+#figura.rombo {
+    width: 100px; 
+     height: 100px; 
+     background: #dfbf0e;
+     transform: rotate(45deg);
+}
+#figura.rectanguloHorizontal{
+    width: 250px;
+    height: 100px;
+    background:#8aec0a;
+    transform: translateY(200px, 50%);
+}
+#figura.rectanguloVertical{
+    width: 100px;
+    height: 250px;
+    background: #000000;
+}
+#figura.imagen{
+     width: 150px; 
+     height: 150px; 
+     background: url(../imagenes/imagen2.jpg);
+}
+#figura.arriba{
+    width: 150px; 
+    height: 150px;
+    transform: translateY(-40px); 
+}
+#figura.abajo{
+    width: 150px; 
+    height: 150px;
+    transform: translateY(60px); 
+}
+#figura.derecha{
+    width: 150px; 
+    height: 150px;
+    transform: translateX( 80px); 
+}
+#figura.izquierda{
+    width: 150px; 
+    height: 150px;
+    transform: translateX(-80px); 
+}
+#figura.diagonal{
+    width: 150px; 
+    height: 150px;
+    transform: translateX(80px) translateY(60px ); 
+}
+#fila{
+    display:flex ;
+    justify-content: space-around ;
+    
+}
+#contOperaciones{
+    width: 700px;
+    height: 200px;
+    background: #36b8c97a;
+    display:inline-table;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+#btnChat{
+    position:fixed;
+    right: 13%;
+    top: 27%;
+    background: #a3bbbd9c;
+    transform: translateX(302px) rotate(-90deg) ;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    transition: 1s;
+}
+#chat{
+    background: #d4eff1;
+    width: 300px;
+    height: 400px;
+    /* pósition:fixed sirve para dejar un contenedor fijo en la pagina */
+    position:fixed ;
+    right: 0%;
+    top: 20%; 
+    transform:  translateX(302px) ;
+    transition: 1s;
+    z-index: 2;
+}
+#chat.active{
+    width: 300px;
+    height: 400px;
+    transform:  translateX(0px) ;
+}
+#btnChat.active{
+    background: #cfe8eb;
+    transform: translateX(0px) rotate(-90deg) ;
+}
+
+
